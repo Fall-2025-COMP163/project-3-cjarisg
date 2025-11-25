@@ -460,7 +460,7 @@ def main():
         if choice == 1:
             new_game()
         elif choice == 2:
-            load_game_menu()
+            load_game()
         elif choice == 3:
             print("\nThanks for playing Quest Chronicles!")
             break

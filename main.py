@@ -91,7 +91,7 @@ def new_game():
     except InvalidCharacterClassError as e:
         print(f"Error: {e}")
 
-def load_game_menu():
+def load_game():
     """
     Load an existing saved game
     

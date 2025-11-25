@@ -122,4 +122,3 @@ class SaveFileCorruptedError(GameError):
 class InvalidSaveDataError(GameError):
     """Raised when save file contains invalid data"""
     pass
-

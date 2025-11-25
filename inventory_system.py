@@ -123,7 +123,8 @@ def use_item(character, item_id, item_data):
     apply_stat_effect(character, stat_name, value)
     
     character['inventory'].remove(item_id)
-    return f"Used {item_data['name']}"
+    item_name = item_data.get('name', item_id)
+    return f"Used {item_name}"
 
 def equip_weapon(character, item_id, item_data):
     """
@@ -165,7 +166,8 @@ def equip_weapon(character, item_id, item_data):
     character['equipped_weapon'] = item_id
     character['inventory'].remove(item_id)
     
-    return f"Equipped {item_data['name']}"
+    item_name = item_data.get('name', item_id)
+    return f"Equipped {item_name}"
 
 def equip_armor(character, item_id, item_data):
     """
